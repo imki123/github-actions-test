@@ -43,7 +43,7 @@ jobs:
       - name: Use branch name as a variable
         run: |
           echo "Current branch is '$BRANCH_NAME'"
-  text:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js and pnpm
