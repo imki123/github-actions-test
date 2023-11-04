@@ -1,0 +1,25 @@
+{
+  "name": "github-actions-test",
+  "version": "1.0.0",
+  "description": "for github actions test",
+  "main": "tinyTest.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imki123/github-actions-test.git"
+  },
+  "keywords": [
+    "github-actions"
+  ],
+  "author": "hoodie, imki123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imki123/github-actions-test/issues"
+  },
+  "homepage": "https://github.com/imki123/github-actions-test#readme",
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}

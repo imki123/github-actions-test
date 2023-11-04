@@ -1,0 +1,4 @@
+# recommend gitignore lists
+node_modules
+/dist
+/build

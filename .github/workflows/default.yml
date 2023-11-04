@@ -43,3 +43,17 @@ jobs:
       - name: Use branch name as a variable
         run: |
           echo "Current branch is '$BRANCH_NAME'"
+  text:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js and pnpm
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: "https://registry.npmjs.org/"
+      - name: Install dependencies
+        run: |
+          npm install -g pnpm
+          pnpm install
+      - name: Run unit tests
+        run: pnpm test
