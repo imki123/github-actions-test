@@ -7,5 +7,5 @@ test("adder", () => {
 });
 
 test("adder2", () => {
-  expect(adder(1213123, 333)).equal(3);
+  expect(adder(1213123, 333)).equal(1213456);
 });
