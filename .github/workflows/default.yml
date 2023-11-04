@@ -37,9 +37,9 @@ jobs:
 
       - name: Get current branch name
         id: branch_name
-        run: echo "::set-output name=branch::${GITHUB_REF/refs\/heads\//}"
+        run: |
+          echo "BRANCH_NAME=$(echo $GITHUB_REF | sed 's/refs\/heads\///')" >> $GITHUB_ENV
 
       - name: Use branch name as a variable
         run: |
-          BRANCH_NAME="${{ steps.branch_name.outputs.branch }}"
           echo "Current branch is $BRANCH_NAME"
